@@ -17,6 +17,8 @@ print("4.Divide")
 
 # Take input from the user 
 choice = input("Enter choice(1/2/3/4):")
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
 
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))
@@ -28,10 +30,13 @@ elif choice == '2':
    print("should sub")
 
 elif choice == '3':
-   print(x,"*",y,"=", multiply(x,y))
+   print(num1,"*",num2,"=", multiply(x,y))
 
 elif choice == '4':
    print("should divide")
+
+elif choice == '4':
+   print(num1,"/",num2,"=", divide(num1,num2))
 
 else:
    print("Invalid input ",choice)
